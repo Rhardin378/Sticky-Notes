@@ -1,3 +1,6 @@
+# Sticky Notes
+
+=
 # Introduction
 
 A  Note Taking App  built using the MVC Architecture, we have also implemented "authorization" so users can sig
