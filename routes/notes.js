@@ -11,6 +11,6 @@ router.put('/markComplete', notesController.markComplete)
 
 router.put('/markIncomplete', notesController.markIncomplete)
 
-router.delete('/deleteTodo', notesController.deleteNote)
+router.delete('/deleteNote', notesController.deleteNote)
 
 module.exports = router
