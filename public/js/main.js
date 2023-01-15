@@ -3,7 +3,7 @@ const note = document.querySelectorAll('span.not')
 const noteComplete = document.querySelectorAll('span.completed')
 
 Array.from(deleteBtn).forEach((el)=>{
-    el.addEventListener('click', deleteTodo)
+    el.addEventListener('click', deleteNote)
 })
 
 Array.from(note).forEach((el)=>{
@@ -14,7 +14,7 @@ Array.from(noteComplete).forEach((el)=>{
     el.addEventListener('click', markIncomplete)
 })
 
-async function deleteTodo(){
+async function deleteNote(){
     const noteId = this.parentNode.dataset.id
     try{
         const response = await fetch('notes/deleteNote', {

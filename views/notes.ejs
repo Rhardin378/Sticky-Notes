@@ -32,10 +32,10 @@
       </div>
     <section class="flex flex-wrap ml-8 gap-x-8">  
         <% if(notes.length === 0) { %>
-            <p class = "text-3xl"> No notes have been added. </p>
+            <p class = "text-4xl font-bold"> No notes have been added. </p>
        <% } %> 
     <% notes.forEach( el => { %>
-            <section class='inline-block min-h-52 w-52 space-y-6 font-Qwitcher text-center text-2xl todoItem p-8 pt-0 my-8 bg-yellow-200' data-id='<%=el._id%>'>
+            <section class='inline-block min-h-52 w-52 space-y-6 font-Qwitcher text-center text-2xl p-8 pt-0 my-8 bg-yellow-200' data-id='<%=el._id%>'>
                 <div class="font-bold text-6xl text-center text-black">.</div>
                 <span class='hover:cursor-pointer <%= el.completed === true ? 'completed' : 'not'%>'><%= el.note %></span>
                 <span class='del text-red-500 hover:cursor-pointer hover:text-red-700'> Delete </span>
@@ -43,7 +43,7 @@
     <% }) %>
 </section>    
 <section>
-    <h2 class="text-3xl ml-8 my-4"><%= user.displayName %> has <span class="font-bold text-red-600"><%= left %></span>  things left to do.</h2>
+    <h2 class="text-4xl font-bold ml-8 my-4"><%= user.displayName %> has <span class="font-bold text-red-600"><%= left %></span>  things left to do.</h2>
 </section>
 
 <section class="p-6 text-gray-100">
