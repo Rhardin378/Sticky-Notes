@@ -1,18 +1,6 @@
 # Introduction
 
-A Simple ToDo App is built using the MVC Architecture, we have also implemented "authorization" so folx can sign up, customize & personalize the app 
-
----
-
-> Be sure to add that lovely star 😀 and fork it for your own copy
-
----
-
-# Objectives
-
-- It's a beginner level app created to understand how MVC concept and logins are added
-
----
+A  Note Taking App  built using the MVC Architecture, we have also implemented "authorization" so users can sig
 
 # Who is this for? 
 
@@ -38,9 +26,3 @@ bcrypt, connect-mongo, dotenv, ejs, express, express-flash, express-session, mon
   - PORT: 2121 (can be any port example: 3000) 
   - DB_STRING: `your database URI` 
  ---
- 
- # Added Features  
-  -working on front end 
-  -possibly displaying todos like post it notes
-
- Have fun testing and improving it! 😎
